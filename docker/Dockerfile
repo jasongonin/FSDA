@@ -1,6 +1,7 @@
 # By default build with latest from mathworks/matlab (make sure you have docker pull'd this) - but you can over-ride
 # this (and the github workflows frequently do) so as to build with different versions of MATLAB
 ARG MATLAB_DOCKER_TAG=latest
+ARG MATLAB_LICENSE
 
 FROM mathworks/matlab:${MATLAB_DOCKER_TAG}
 
